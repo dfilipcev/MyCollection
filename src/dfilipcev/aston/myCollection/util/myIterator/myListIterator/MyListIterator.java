@@ -1,6 +1,6 @@
-package util.collections.myIterator.myListIterator;
+package dfilipcev.aston.myCollection.util.myIterator.myListIterator;
 
-import util.collections.myIterator.MyIterator;
+import dfilipcev.aston.myCollection.util.myIterator.MyIterator;
 
 public interface MyListIterator<T> extends MyIterator<T> {
 

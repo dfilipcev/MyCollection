@@ -1,8 +1,6 @@
-package MyCollection;
+package dfilipcev.aston.myCollection;
 
-import MyCollection.myIterable.MyIterable;
-
-import java.util.Collection;
+import dfilipcev.aston.myCollection.myIterable.MyIterable;
 
 public interface MyCollection<E> extends MyIterable<E> {
 

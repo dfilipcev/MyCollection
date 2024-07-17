@@ -1,4 +1,4 @@
-package MyCollection.exceptions.emptyCollectionOperation;
+package dfilipcev.aston.myCollection.exceptions.emptyCollectionOperation;
 
 public class EmptyCollectionOperation extends RuntimeException {
 

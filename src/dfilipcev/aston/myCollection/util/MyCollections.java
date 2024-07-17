@@ -1,6 +1,6 @@
-package util.collections;
+package dfilipcev.aston.myCollection.util;
 
-import MyCollection.MyList.MyList;
+import dfilipcev.aston.myCollection.MyList.MyList;
 
 import java.util.Comparator;
 

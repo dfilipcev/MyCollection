@@ -1,9 +1,7 @@
-package MyCollection.MyList;
+package dfilipcev.aston.myCollection.MyList;
 
-import MyCollection.MyCollection;
-import util.collections.myIterator.myListIterator.MyListIterator;
-
-import java.util.Collection;
+import dfilipcev.aston.myCollection.MyCollection;
+import dfilipcev.aston.myCollection.util.myIterator.myListIterator.MyListIterator;
 
 public interface MyList<E> extends MyCollection<E> {
 

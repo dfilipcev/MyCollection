@@ -1,6 +1,6 @@
-package MyCollection.myIterable;
+package dfilipcev.aston.myCollection.myIterable;
 
-import util.collections.myIterator.MyIterator;
+import dfilipcev.aston.myCollection.util.myIterator.MyIterator;
 
 import java.util.function.Consumer;
 

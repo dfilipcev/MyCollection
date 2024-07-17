@@ -1,10 +1,10 @@
-package MyCollection.MyList.MyArrayList;
+package dfilipcev.aston.myCollection.MyList.MyArrayList;
 
-import MyCollection.MyCollection;
-import MyCollection.MyList.MyList;
-import MyCollection.exceptions.emptyCollectionOperation.emptyListOperation.EmptyListOperation;
-import util.collections.myIterator.MyIterator;
-import util.collections.myIterator.myListIterator.MyListIterator;
+import dfilipcev.aston.myCollection.MyCollection;
+import dfilipcev.aston.myCollection.MyList.MyList;
+import dfilipcev.aston.myCollection.exceptions.emptyCollectionOperation.emptyListOperation.EmptyListOperation;
+import dfilipcev.aston.myCollection.util.myIterator.MyIterator;
+import dfilipcev.aston.myCollection.util.myIterator.myListIterator.MyListIterator;
 
 import java.util.*;
 
@@ -17,8 +17,6 @@ public class MyArrayList<E> implements MyList<E> {
     private int size;
 
     private static final int BIG_DATA = 1300;
-
-    private boolean isSorted = false;
 
     public MyArrayList() {
         elementsData = new Object[DEFAULT_CAPACITY];
@@ -44,14 +42,6 @@ public class MyArrayList<E> implements MyList<E> {
             E[] elementsArray = elements.toArray();
             elementsData = Arrays.copyOf(elementsArray, size = elementsArray.length, Object[].class);
         }
-    }
-
-    public boolean isSorted() {
-        return isSorted;
-    }
-
-    public void isSorted(boolean sorted) {
-        isSorted = sorted;
     }
 
     @Override
@@ -87,7 +77,6 @@ public class MyArrayList<E> implements MyList<E> {
         if (isEmpty()) {
             throw new EmptyListOperation();
         }
-        indexOutOfBoundCheck(index);
         E removed = getElement(index);
         removeAt(index);
         return removed;
@@ -245,10 +234,10 @@ public class MyArrayList<E> implements MyList<E> {
 
     @SuppressWarnings("unchecked")
     private E getElement(int index) {
-        indexOutOfBoundCheck(index);
         if (elementsData[index] == null) {
             throw new IllegalArgumentException("Element is empty");
         }
+        indexOutOfBoundCheck(index);
         return (E) elementsData[index];
     }
 

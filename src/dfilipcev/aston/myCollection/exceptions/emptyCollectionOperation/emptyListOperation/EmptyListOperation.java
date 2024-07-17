@@ -1,6 +1,6 @@
-package MyCollection.exceptions.emptyCollectionOperation.emptyListOperation;
+package dfilipcev.aston.myCollection.exceptions.emptyCollectionOperation.emptyListOperation;
 
-import MyCollection.exceptions.emptyCollectionOperation.EmptyCollectionOperation;
+import dfilipcev.aston.myCollection.exceptions.emptyCollectionOperation.EmptyCollectionOperation;
 
 public class EmptyListOperation extends EmptyCollectionOperation {
 
